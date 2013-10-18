@@ -1,0 +1,35 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE hibernate-configuration PUBLIC
+          "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+          "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+
+<hibernate-configuration>
+
+	<session-factory>
+		<property name="connection.url">jdbc:mysql://localhost:3306/acc</property>
+		<property name="connection.driver_class">com.mysql.jdbc.Driver</property>
+		<property name="connection.username">root</property>
+		<property name="connection.password">aichuan</property>
+
+		<!-- hibernate方言 -->
+		<property name="dialect">org.hibernate.dialect.MySQLDialect</property>
+
+		<!-- 配置hibernate连接池大小，也可以使用外部连接池C3PO -->
+		<property name="connection.pool_size"></property>
+
+		<!-- 显示sql语句到控制台 -->
+		<property name="hibernate.show_sql">true</property>
+
+		<!-- sql语句格式化后显示到控制台 -->
+		<property name="hibernate.format_sql">true</property>
+
+		<!-- 设置hibernate自身的二级缓存SessionFactory -->
+		<property name="hibernate.cache.use_second_level_cache">true</property>
+
+		<!-- 映射持久化类 -->
+		<mapping resource="org/verphen/bean/Member.hbm.xml" />
+
+
+	</session-factory>
+
+</hibernate-configuration>
