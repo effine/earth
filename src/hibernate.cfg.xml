@@ -26,9 +26,11 @@
 		<!-- 设置hibernate自身的二级缓存SessionFactory -->
 		<property name="hibernate.cache.use_second_level_cache">true</property>
 
-		<!-- 映射持久化类 -->
-		<mapping resource="org/verphen/bean/Member.hbm.xml" />
+		<!-- 配置log4j日志 -->
+		<property name="hbm2ddl.auto">update</property>
 
+		<!-- 映射持久化类（数据库中的表） -->
+		<mapping resource="org/verphen/bean/Member.hbm.xml" />
 
 	</session-factory>
 

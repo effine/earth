@@ -19,8 +19,6 @@ public class Test {
 	// 获得时间
 	public static Timestamp getCurrentTime() {
 		Calendar c = Calendar.getInstance();
-		System.out.println(c.getTime());
-		System.out.println(c.getTime().getTime());
 		Timestamp time = new Timestamp(c.getTime().getTime());
 		return time;
 	}
