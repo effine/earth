@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+	"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+	"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+
+	<!--class name指出类的路径，table数据库表的位置  -->
+	<class name="org.verphen.bean.Member" table="member" lazy="false">
+
+		<!--
+			主关键字字段必须用id表示; name 类中的变量名称，type 类型，colum表中字段名;
+			Generator主关键字产生器;class=”increment” 自增长类型
+		-->
+		<id name="id" type="int" column="id">
+			<generator class="increment" />
+		</id>
+
+		<!-- 其他字段用property声明 其他一致 -->
+		<property name="username" column="username" />
+		<property name="password" column="password" />
+		<property name="birthday" column="birthday" />
+	</class>
+</hibernate-mapping>
