@@ -38,6 +38,7 @@ public class Test {
 		SessionFactory sf = cfg.buildSessionFactory();
 		Session session = sf.openSession();
 		Transaction ts = null;
+
 		try {
 			ts = session.beginTransaction();
 			Member m = new Member();
