@@ -8,6 +8,7 @@ package cn.effine.bean;
  * @sine 0.2
  */
 public class User {
+
     private int id;
     private String name;
 
@@ -26,4 +27,5 @@ public class User {
     public void setName(String name) {
         this.name = name;
     }
+
 }
