@@ -8,4 +8,6 @@ package cn.effine;
  * @sine 0.2
  */
 public class Test {
+
+    
 }
