@@ -8,4 +8,5 @@ package cn.effine.bean;
  * @sine 0.2
  */
 public class User {
+    
 }
