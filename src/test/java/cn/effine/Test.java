@@ -9,5 +9,5 @@ package cn.effine;
  */
 public class Test {
 
-    
+
 }
